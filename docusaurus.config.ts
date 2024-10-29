@@ -11,6 +11,7 @@ const config: Config = {
   organizationName: 'Wangjunjie991116', // Usually your GitHub org/user name.
   projectName: 'Wangjunjie991116.github.io', // Usually your repo name.
   deploymentBranch:'main', // 默认部署分支
+  trailingSlash:false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   headTags: [
