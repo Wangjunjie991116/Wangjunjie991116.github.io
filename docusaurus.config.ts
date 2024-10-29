@@ -9,7 +9,7 @@ const config: Config = {
   url: 'https://Wangjunjie991116.github.io/',
   baseUrl: '/',
   organizationName: 'Wangjunjie991116', // Usually your GitHub org/user name.
-  projectName: 'jj-blog', // Usually your repo name.
+  projectName: 'Wangjunjie991116.github.io', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   // i18n: {
