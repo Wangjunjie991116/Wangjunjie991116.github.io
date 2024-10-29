@@ -10,12 +10,9 @@ const config: Config = {
   baseUrl: '/',
   organizationName: 'Wangjunjie991116', // Usually your GitHub org/user name.
   projectName: 'Wangjunjie991116.github.io', // Usually your repo name.
+  deploymentBranch:'main', // 默认部署分支
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  // i18n: {
-  //   defaultLocale: 'en',
-  //   locales: ['en'],
-  // },
   headTags: [
     {
       tagName: 'meta',
@@ -54,8 +51,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    // image: 'img/docusaurus-social-card.jpg',
+    image: 'img/docusaurus-social-card.jpg',
     announcementBar: {
       id: 'support_us',
       content: '如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Wangjunjie991116">GitHub</a>',
