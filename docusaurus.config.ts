@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-	title: '王俊杰',
+	title: 'junjie‘s Home 🏠',
 	tagline: `Love and desire are the spirit's wings to great deeds`,
 	favicon: 'img/favicon.ico',
 	url: 'https://Wangjunjie991116.github.io/',
@@ -16,6 +16,17 @@ const config: Config = {
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	headTags: [{ tagName: 'meta', attributes: { name: 'referrer', content: 'no-referrer' } }],
+	future: { experimental_faster: true }, // 一次性全开启下述配置
+	// future: {
+	// 	experimental_faster: {
+	// 		swcJsLoader: true, // 使用SWC转译 JS（而不是Babel）
+	// 		swcJsMinimizer: true, // 使用SWC压缩 JS（而不是Terser）
+	// 		swcHtmlMinimizer: true, // 使用SWC压缩 HTML 和内联 JS/CSS（而不是html-minifier-terser）
+	// 		lightningCssMinimizer: true, // 使用Lightning CSS压缩 CSS（而不是cssnano和clean-css）
+	// 		rspackBundler: true, // 使用Rspack打包你的应用（而不是webpack）
+	// 		mdxCrossCompilerCache: true, // 为浏览器/Node.js 环境编译一次 MDX 文件，而不是两次
+	// 	},
+	// },
 	presets: [
 		[
 			'classic',
@@ -54,29 +65,16 @@ const config: Config = {
 			isCloseable: true,
 		},
 		navbar: {
-			title: '王俊杰的前端小记',
+			title: '小杰的前端便签',
 			hideOnScroll: true,
-			logo: {
-				alt: 'My Site Logo',
-				src: 'img/logo.svg',
-			},
+			logo: { alt: 'My Site Logo', src: 'img/logo.svg' },
 			items: [
-				{
-					type: 'docSidebar',
-					sidebarId: 'tutorialSidebar',
-					position: 'left',
-					label: 'Tutorial',
-				},
-				{
-					type: 'search',
-					position: 'right',
-				},
-				{ to: '/blog', label: 'Blog', position: 'left' },
-				{
-					href: 'https://github.com/Wangjunjie991116',
-					label: 'GitHub',
-					position: 'right',
-				},
+				{ label: '开源', position: 'right', sidebarId: 'ossSidebar', type: 'docSidebar' },
+				{ label: '方案', position: 'right', sidebarId: 'schemeSidebar', type: 'docSidebar' },
+				{ label: '博客', position: 'right', sidebarId: 'blogSidebar', type: 'docSidebar' },
+				{ label: '工具', position: 'right', sidebarId: 'toolSidebar', type: 'docSidebar' },
+				{ label: '笔记', position: 'right', sidebarId: 'noteSidebar', type: 'docSidebar' },
+				{ label: 'GitHub', position: 'right', href: 'https://github.com/Wangjunjie991116' },
 			],
 		},
 		// footer: {
