@@ -59,22 +59,23 @@ const config: Config = {
 		announcementBar: {
 			id: 'support_us',
 			content:
-				'如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Wangjunjie991116">GitHub</a>',
+				'🎉 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Wangjunjie991116">GitHub</a> 🥳️',
 			backgroundColor: '#fafbfc',
 			textColor: '#091E42',
 			isCloseable: true,
 		},
 		navbar: {
-			title: '小杰的前端便签',
+			title: 'junjie‘s Home',
 			hideOnScroll: true,
 			logo: { alt: 'My Site Logo', src: 'img/logo.svg' },
 			items: [
-				{ label: '开源', position: 'right', sidebarId: 'ossSidebar', type: 'docSidebar' },
-				{ label: '方案', position: 'right', sidebarId: 'schemeSidebar', type: 'docSidebar' },
-				{ label: '博客', position: 'right', sidebarId: 'blogSidebar', type: 'docSidebar' },
-				{ label: '工具', position: 'right', sidebarId: 'toolSidebar', type: 'docSidebar' },
-				{ label: '笔记', position: 'right', sidebarId: 'noteSidebar', type: 'docSidebar' },
-				{ label: 'GitHub', position: 'right', href: 'https://github.com/Wangjunjie991116' },
+				{ label: ' 🤝🏻 开源 ', position: 'right', sidebarId: 'ossSidebar', type: 'docSidebar' },
+				{ label: ' 📚 方案 ', position: 'right', sidebarId: 'schemeSidebar', type: 'docSidebar' },
+				{ label: ' 📝 笔记 ', position: 'right', sidebarId: 'noteSidebar', type: 'docSidebar' },
+				// { label: '博客', position: 'right', sidebarId: 'blogSidebar', type: 'docSidebar' },
+				{ label: ' 📖 好文 ', position: 'right', sidebarId: 'articleSidebar', type: 'docSidebar' },
+				{ label: ' 🔧 工具 ', position: 'right', sidebarId: 'toolSidebar', type: 'docSidebar' },
+				{ label: ' GitHub ', position: 'right', href: 'https://github.com/Wangjunjie991116' },
 			],
 		},
 		// footer: {
