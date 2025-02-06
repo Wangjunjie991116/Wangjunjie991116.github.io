@@ -30,10 +30,6 @@ module.exports = {
 	 */
 	singleQuote: true,
 	/**
-	 * 如何换行
-	 */
-	proseWrap: 'always',
-	/**
 	 * 当箭头函数只有一个参数是否加括号
 	 * @default "always"
 	 * @type {"always"|"avoid"}
@@ -57,4 +53,9 @@ module.exports = {
 	 * @type {boolean}
 	 */
 	jsxBracketSameLine: false,
+	/**
+	 * 如何换行（仅适用于 md 文件）
+	 * always 总是控制换行; never 从不换行
+	 */
+	proseWrap: 'never',
 };
