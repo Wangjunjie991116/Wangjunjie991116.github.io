@@ -12,7 +12,7 @@ const sidebars: SidebarsConfig = {
 	],
 	noteSidebar: [
 		{
-			label: '书籍阅读',
+			label: '阅读 & 手账 👨‍💻',
 			type: 'category',
 			items: [
 				{ type: 'doc', label: '《你不知道的JavaScrit》', id: 'note/books/YouDonNotKnowJS' },
@@ -20,7 +20,7 @@ const sidebars: SidebarsConfig = {
 			],
 		},
 		{
-			label: '实践 & 踩坑',
+			label: '实践 & 踩坑 🐾',
 			type: 'category',
 			items: [
 				{ type: 'doc', label: '小程序', id: 'note/practice/MiniApp' },
@@ -32,15 +32,16 @@ const sidebars: SidebarsConfig = {
 			],
 		},
 		{
-			label: '原理',
+			label: '基础 & 原理 🤔',
 			type: 'category',
 			items: [
-				{ type: 'doc', label: '小程序', id: 'note/theory/MiniApp' },
-				{ type: 'doc', label: '计算机网络', id: 'note/theory/Net' },
-				{ type: 'doc', label: 'React', id: 'note/theory/React' },
-				{ type: 'doc', label: 'JavaScript', id: 'note/theory/JavaScript' },
-				{ type: 'doc', label: 'HTML', id: 'note/theory/HTML' },
-				{ type: 'doc', label: 'CSS', id: 'note/theory/CSS' },
+				{ type: 'doc', label: '小程序', id: 'note/base/MiniApp' },
+				{ type: 'doc', label: '计算机网络', id: 'note/base/Net' },
+				{ type: 'doc', label: 'Git', id: 'note/base/Git' },
+				{ type: 'doc', label: 'React', id: 'note/base/React' },
+				{ type: 'doc', label: 'JavaScript', id: 'note/base/JavaScript' },
+				{ type: 'doc', label: 'HTML', id: 'note/base/HTML' },
+				{ type: 'doc', label: 'CSS', id: 'note/base/CSS' },
 			],
 		},
 	],
