@@ -35,6 +35,7 @@ const config: Config = {
 					sidebarPath: './sidebars.ts',
 					editUrl:
 						'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+					sidebarCollapsible: false, // 所有目录默认不可折叠，可对单独目录配置 collapsible:true 开启折叠
 				},
 				blog: {
 					showReadingTime: true,
