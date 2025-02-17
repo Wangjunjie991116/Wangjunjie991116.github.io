@@ -2,26 +2,26 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
 	ossSidebar: [
-		{ label: 'FE 通用方法库 🚀 jj-fast-utils', type: 'doc', id: 'oss/jj-fast-utils' },
-		{ label: 'Lint 通用规则库 📏 jj-lint', type: 'doc', id: 'oss/jj-lint' },
+		{ type: 'doc', label: 'FE 通用方法库 🚀 jj-fast-utils', id: 'oss/jj-fast-utils' },
+		{ type: 'doc', label: 'Lint 通用规则库 📏 jj-lint', id: 'oss/jj-lint' },
 	],
 	schemeSidebar: [
-		{ label: 'Web 会话回放方案 🎬', type: 'doc', id: 'scheme/web-sessions-replay' },
-		{ label: 'Web 中后台产研规范 🖥', type: 'doc', id: 'scheme/web-admin-standard' },
-		{ label: 'Taro 升级规范 🔝', type: 'doc', id: 'scheme/taro-upgrade-way' },
+		{ type: 'doc', label: 'Web 会话回放方案 🎬', id: 'scheme/web-sessions-replay' },
+		{ type: 'doc', label: 'Web 中后台产研规范 🖥', id: 'scheme/web-admin-standard' },
+		{ type: 'doc', label: 'Taro 项目版本升级规范 🔝', id: 'scheme/taro-upgrade-way' },
 	],
 	noteSidebar: [
 		{
-			label: '阅读 & 手账 👨‍💻',
 			type: 'category',
+			label: '阅读 & 手账 👨‍💻',
 			items: [
 				{ type: 'doc', label: '《你不知道的JavaScrit》', id: 'note/books/YouDonNotKnowJS' },
 				{ type: 'doc', label: '《HTTP权威指南》', id: 'note/books/HTTPTheDefinitiveGuide' },
 			],
 		},
 		{
-			label: '实践 & 踩坑 🐾',
 			type: 'category',
+			label: '实践 & 踩坑 🐾',
 			items: [
 				{ type: 'doc', label: '小程序', id: 'note/practice/MiniApp' },
 				{ type: 'doc', label: '计算机网络', id: 'note/practice/Net' },
@@ -32,8 +32,8 @@ const sidebars: SidebarsConfig = {
 			],
 		},
 		{
-			label: '基础 & 原理 🤔',
 			type: 'category',
+			label: '基础 & 原理 🤔',
 			items: [
 				{ type: 'doc', label: '小程序', id: 'note/base/MiniApp' },
 				{ type: 'doc', label: '计算机网络', id: 'note/base/Net' },
@@ -45,7 +45,7 @@ const sidebars: SidebarsConfig = {
 			],
 		},
 	],
-	articleSidebar: [{ label: '好文', type: 'doc', id: 'article/intro' }],
+	articleSidebar: [{ type: 'doc', label: '好文', id: 'article/intro' }],
 	toolSidebar: [{ type: 'category', label: 'demo', items: ['tool/intro'] }],
 	// blogSidebar: [{ type: 'category', label: 'demo', items: ['blog/intro'] }],
 };
