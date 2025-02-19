@@ -16,7 +16,7 @@ module.exports = {
 	 * @default false
 	 * @type {boolean}
 	 */
-	useTabs: true,
+	useTabs: false,
 	/**
 	 * 换行宽度，当代码宽度达到多少时换行
 	 * @default 80
