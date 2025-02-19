@@ -2,6 +2,10 @@
 
 ## 实践
 
+### **【小程序】**
+
+### 微信小程序中使用 echarts
+
 ## 踩坑
 
 ### **【普适】**
@@ -19,11 +23,25 @@
     /* padding-bottom: 16PX; */
 }
 ```
+
+### **【H5】**
+
+### 页面返回闪烁
+
+-   **背景**：页面 A 跳转 页面 B 后，点击浏览器返回，页面 B 会闪一下然后展示（Taro V3.5.10）
+-   **原因**：Taro H5 如果使用 fixed 定位，在切换路由时，上个页面的元素会停留
+-   **解决**：在 app.config.ts 文件中配置 animaa:false 关闭动画（默认值为 true）
+
+```js
+export default defineAppConfig({
+    // ...
+    animation: false,
+});
+```
+
 ---
 
-
 ### **【小程序】**
-
 
 ### [滚动穿透](https://taro-docs.jd.com/docs/react-overall#%E9%98%BB%E6%AD%A2%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F)
 
@@ -36,4 +54,5 @@
 /* 这个 View 组件会绑定 catchtouchmove 事件而不是 bindtouchmove */
 <View catchMove></View>
 ```
+
 ---
