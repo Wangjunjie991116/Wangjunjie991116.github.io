@@ -23,6 +23,8 @@ const sidebars: SidebarsConfig = {
 			type: 'category',
 			label: '实践 & 踩坑 🐾',
 			items: [
+				{ type: 'doc', label: 'Taro', id: 'note/practice/Taro' },
+				{ type: 'doc', label: 'H5', id: 'note/practice/H5' },
 				{ type: 'doc', label: '小程序', id: 'note/practice/MiniApp' },
 				{ type: 'doc', label: '计算机网络', id: 'note/practice/Net' },
 				{ type: 'doc', label: 'React', id: 'note/practice/React' },
