@@ -14,9 +14,7 @@
 
 ## 踩坑
 
-### **【小程序】**
-
-### 开发者工具控制台打印的内容无法复制
+### 【小程序】开发者工具控制台打印的内容无法复制
 
 **解决**：借助小程序的 [wx.setClipboardData](https://developers.weixin.qq.com/miniprogram/dev/api/device/clipboard/wx.setClipboardData.html) 将要打印的内容复制到剪贴板
 
