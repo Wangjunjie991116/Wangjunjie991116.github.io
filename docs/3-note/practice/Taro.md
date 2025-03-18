@@ -1,8 +1,20 @@
-# Taro
+# Taro 跨端
 
 ## 实践
 
-### [【小程序】微信小程序中使用 echarts](https://github.com/ecomfe/echarts-for-weixin)
+### 【小程序】[微信小程序中使用 echarts](https://github.com/ecomfe/echarts-for-weixin)
+
+### 【APP】`Native+Finclip小程序`方案相比`Native+H5`方案
+
+-   优势
+    -   Finclip小程序在连续表单和页面连续跳转的时候，性能、交互相对较好
+    -   Finclip小程序调用原生能力更强，比如地理位置、相册、相机、通讯录、调用硬件、访问蓝牙(系统权限)
+    -   Finclip小程序独立存储 storage，保障用户的行为合规安全
+    -   Finclip小程序在视频录制、人脸识别等方面表现更好
+    -   Finclip小程序安全的沙箱 SDK 环境内
+    -   Finclip小程序支持模块化、独立发布和更新
+-   缺陷
+    -   跨平台代码开发不如 H5 灵活
 
 ## 踩坑
 
@@ -35,7 +47,7 @@ export default defineAppConfig({
 
 ---
 
-### [【小程序】滚动穿透](https://taro-docs.jd.com/docs/react-overall#%E9%98%BB%E6%AD%A2%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F)
+### 【小程序】[滚动穿透](https://taro-docs.jd.com/docs/react-overall#%E9%98%BB%E6%AD%A2%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F)
 
 -   **背景**：在小程序中开发内容弹窗，弹窗中有可供上下滑动的滚动列表
 -   **问题**：手指滑动滚动列表，内容弹窗下方的页面随之滚动
