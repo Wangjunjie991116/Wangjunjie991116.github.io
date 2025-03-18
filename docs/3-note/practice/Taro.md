@@ -4,7 +4,7 @@
 
 ### **【小程序】**
 
-### 微信小程序中使用 echarts
+### [微信小程序中使用 echarts](https://github.com/ecomfe/echarts-for-weixin)
 
 ## 踩坑
 
