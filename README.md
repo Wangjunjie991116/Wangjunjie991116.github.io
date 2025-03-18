@@ -1,44 +1,27 @@
-# Website
+# 建站工具
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+# 安装依赖
 
 ```
-$ pnpm
+$ pnpm i
 ```
 
-### Local Development
+# 本地启动
 
 ```
 $ pnpm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without
-having to restart the server.
-
-### Build
+# 构建资源
 
 ```
 $ pnpm build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting
-service.
-
-### Deployment
-
-Using SSH:
+# 发布至 `gh-pages` 分支
 
 ```
-$ USE_SSH=true pnpm deploy
+$ pnpm run depoly 
 ```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> pnpm deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the
-`gh-pages` branch.
