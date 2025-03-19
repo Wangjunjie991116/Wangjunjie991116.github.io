@@ -24,9 +24,9 @@ const sidebars: SidebarsConfig = {
             type: 'category',
             label: '实践 & 踩坑 🐾',
             items: [
-                { type: 'doc', label: '-Taro', id: 'note/practice/Taro' },
-                { type: 'doc', label: '-Net', id: 'note/practice/Net' },
-                { type: 'doc', label: '-移动端开发（H5/小程序）', id: 'note/practice/Mobile' },
+                { type: 'doc', label: '-Taro 跨端', id: 'note/practice/Taro' },
+                { type: 'doc', label: '-H5 移动端', id: 'note/practice/WebMobile' },
+                { type: 'doc', label: '-网络', id: 'note/practice/Net' },
                 { type: 'doc', label: '-Git', id: 'note/practice/Git' },
                 { type: 'doc', label: '-React', id: 'note/practice/React' },
                 { type: 'doc', label: '-HTML/CSS/JS', id: 'note/practice/HtmlCssJs' },
@@ -37,15 +37,13 @@ const sidebars: SidebarsConfig = {
             label: '基础 & 原理 🤔',
             items: [
                 { type: 'doc', label: '-小程序', id: 'note/base/MiniApp' },
-                // { type: 'doc', label: '计算机网络', id: 'note/base/Net' },
                 { type: 'doc', label: '-Git', id: 'note/base/Git' },
                 { type: 'doc', label: '-React', id: 'note/base/React' },
-                { type: 'doc', label: '-HTML/CSS/JS', id: 'note/base/HtmlCssJs' },
             ],
         },
     ],
     articleSidebar: [{ type: 'doc', label: '好文', id: 'article/intro' }],
-    toolSidebar: [{ type: 'category', label: 'demo', items: ['tool/intro'] }],
+    toolSidebar: [{ type: 'doc', label: '武器库', id: 'tool/package' }],
     // blogSidebar: [{ type: 'category', label: 'demo', items: ['blog/intro'] }],
 };
 

@@ -7,12 +7,12 @@
 ### 【APP】`Native+Finclip小程序`方案相比`Native+H5`方案
 
 -   优势
-    -   Finclip小程序在连续表单和页面连续跳转的时候，性能、交互相对较好
-    -   Finclip小程序调用原生能力更强，比如地理位置、相册、相机、通讯录、调用硬件、访问蓝牙(系统权限)
-    -   Finclip小程序独立存储 storage，保障用户的行为合规安全
-    -   Finclip小程序在视频录制、人脸识别等方面表现更好
-    -   Finclip小程序安全的沙箱 SDK 环境内
-    -   Finclip小程序支持模块化、独立发布和更新
+    -   Finclip 小程序在连续表单和页面连续跳转的时候，性能、交互相对较好
+    -   Finclip 小程序调用原生能力更强，比如地理位置、相册、相机、通讯录、调用硬件、访问蓝牙(系统权限)
+    -   Finclip 小程序独立存储 storage，保障用户的行为合规安全
+    -   Finclip 小程序在视频录制、人脸识别等方面表现更好
+    -   Finclip 小程序安全的沙箱 SDK 环境内
+    -   Finclip 小程序支持模块化、独立发布和更新
 -   缺陷
     -   跨平台代码开发不如 H5 灵活
 
@@ -57,6 +57,23 @@ export default defineAppConfig({
 ```jsx
 /* 这个 View 组件会绑定 catchtouchmove 事件而不是 bindtouchmove */
 <View catchMove></View>
+```
+
+### 【小程序】开发者工具控制台打印的内容无法复制
+
+-   **解决**：借助小程序的 [wx.setClipboardData](https://developers.weixin.qq.com/miniprogram/dev/api/device/clipboard/wx.setClipboardData.html) 将要打印的内容复制到剪贴板
+
+```javascript
+Taro.setClipboardData({
+    data: 'data',
+    success(res) {
+        Taro.getClipboardData({
+            success(res) {
+                console.log(res.data); // data
+            },
+        });
+    },
+});
 ```
 
 ---
