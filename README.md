@@ -23,5 +23,5 @@ $ pnpm build
 # 发布至 `gh-pages` 分支
 
 ```
-$ pnpm run depoly 
+$ npm run depoly 
 ```
