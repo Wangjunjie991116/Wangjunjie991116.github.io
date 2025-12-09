@@ -2,7 +2,8 @@
 
 ## 一、背景
 
-设计稿提供的动图 GIF 源体积为 4.7MB，经有损压缩后为 1.5 MB，此时放大播放图片，能看的图形边缘出现锯齿，在 H5 图片加载阶段能看到明显卡顿、掉帧。
+营销业务场景，通常会有各种各样的动画效果，设计师提供的 Gif 图通常都会比较大。
+eg：某次需求设计稿提供的动图 GIF 源体积为 4.7MB，经有损压缩后为 1.5 MB，此时放大动图，能看到图形边缘出现锯齿，在 H5 图片加载阶段，页面能看到明显卡顿、掉帧。
 
 ## 二、操作
 
@@ -13,7 +14,7 @@
 5. 项目安装 lottie-web 库，版本与 json 文件中的字段"v"一致
 6. 执行 lottie 实例初始化，并监听
 
-```json
+```json title='demo.json'
 {
     "v": "5.12.2",
     "fr": 60,
@@ -65,7 +66,7 @@
 }
 ```
 
-```javascript
+```javascript title='业务示例代码（以 Lit 框架为例）'
 import { html, type TemplateResult, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
@@ -225,7 +226,7 @@ export class Demo extends BaseElement {
 
 明确代码需要使用的渲染器（SVG、Canvas、HTML），通常 1 个项目只用到 1 种
 
-```javascript
+```javascript title='指定渲染器导入'
 // 只需要Canvas渲染器
 import lottie from 'lottie-web/build/player/lottie_canvas.min.js';
 // 只需要SVG渲染器（最小体积）
@@ -253,7 +254,7 @@ import lottie from 'lottie-web/build/player/lottie_light_html.min.js';
 
 将图片体积小于 2KB 的图片，转成 Base64 格式，附在 xx.json 文件的 assert 字段的属性“p”中
 
-```json
+```json title='示意'
 "assets": [{
   "id": "icon",
   "u": "",
@@ -273,7 +274,7 @@ import lottie from 'lottie-web/build/player/lottie_light_html.min.js';
 
 Bodymovin 插件设置（设计操作）
 
-```shell
+```shell title='配置示例'
 "decimalPrecision": 2, // 关键帧数值精度（默认是 6 位）
 "shapeOptimization": true, // 合并相邻路径点
 "keyframeReduction": true // 移除冗余关键
@@ -283,7 +284,7 @@ Bodymovin 插件设置（设计操作）
 
 ### 5.1 原理
 
-```json
+```json title='lottie json 字段介绍'
 {
     "fr": 30, // 帧率
     "ip": 0, // 起始关键帧
@@ -315,8 +316,8 @@ Bodymovin 插件设置（设计操作）
 动画通过给 CompositionLayer（所有的子 layer 都添加在这个 Layer 上）的 "CurrentFrame" 属性添加一个 CABaseAnimation 来实现。
 
 所有的子 Layer 根据 CurrentFrame 属性的变化，根据 Json 中的关键帧数组计算出自己的当前状态进行显示。
-
 ![theory](../../static/img/scheme/lottie-animation/theory.png)
+
 
 ### 5.2 方法
 
@@ -334,7 +335,7 @@ Bodymovin 插件设置（设计操作）
 -   **destory()**：删除该动画，移除相应的元素标签等。在 unmount 的时候，需要调用该方法
 -   **getDuration(inFrames)**：获取动画持续时间。inFrames 参数为 true，则返回以帧为单位的持续时间；如果为 false，则返回以秒为单位的持续时间
 
-```javascript
+```javascript title='常用方法'
 lottie实例.play(); // 播放该动画，从目前停止的帧开始播放
 lottie实例.stop(); // 停止播放该动画，回到第0帧
 lottie实例.pause(); // 暂停该动画，在当前帧停止并保持
@@ -373,13 +374,13 @@ lottie实例.destroy(); // 删除该动画，移除相应的元素标签等。�
 -   **DOMLoaded**：动画相关的 dom 已经被添加到 html 后触发
 -   **destroy**：将在动画删除时触发
 
-```javascript
+```javascript title='使用示例'
 lottie实例.addEventListener('enterFrame', function () {
     console.log('lottie');
 });
 ```
 
-# 参考资料
+## 参考资料
 
 -   [Lottie - 轻松实现复杂的动画效果](https://juejin.cn/post/6844903661760413704)
 -   [Lottie：让动画真的”动”起来](https://juejin.cn/post/7329410360221728794)
