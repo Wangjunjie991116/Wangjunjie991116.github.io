@@ -10,6 +10,7 @@ const sidebars: SidebarsConfig = {
         { type: 'doc', label: 'Web 中后台产研规范 🖥', id: 'scheme/web-admin-standard' },
         { type: 'doc', label: 'Taro 项目版本升级规范 🔝', id: 'scheme/taro-upgrade-way' },
         { type: 'doc', label: '多层组件库国际化方案 🌏', id: 'scheme/comp-lib-internation' },
+        { type: 'doc', label: 'Lottie 动画实现及性能优化 🦄', id: 'scheme/lottie-animation' },
     ],
     noteSidebar: [
         {
